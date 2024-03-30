@@ -1,3 +1,8 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
 header{
     display: flex;
     justify-content: right;
@@ -6,10 +11,42 @@ header{
 }
 
 header nav {
-    background-color: aqua;
+    display: flex;
+    gap: 25px;
+}
+
+.boton_acceder {
+    background-color: #4285F4;
+    color: #ffff;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 5px;
 }
 
 main {
-display: flex;
-justify-content: center;
+    min-height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logohome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search {
+    display: block;
+    width: 500px;
+    height: 25px;
+    margin: 20px;
+    border-radius: 10px;
+    border: solid gray 2px;
+}
+
+.botones_buscar {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
 }
