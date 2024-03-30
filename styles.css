@@ -1,0 +1,15 @@
+header{
+    display: flex;
+    justify-content: right;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header nav {
+    background-color: aqua;
+}
+
+main {
+display: flex;
+justify-content: center;
+}
