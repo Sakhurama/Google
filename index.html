@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,9 +10,9 @@
 <body>
     <header>
         <nav>
-            <a href="https://mail.google.com/mail/&ogbl" target="_blank">Gmail</a>
-            <a href="https://www.google.com.co/imghp?hl=es-419&ogbl" target="_blank">Imágenes</a>
-            <a href="https://www.google.com.co/intl/es-419/about/products" target="_blank"><img src="./img/al-icon.png" alt=""></a>
+            <a href="https://mail.google.com/mail/&ogbl" target="_blank" class="header_menu">Gmail</a>
+            <a href="https://www.google.com.co/imghp?hl=es-419&ogbl" target="_blank" class="header_menu">Imágenes</a>
+            <a href="https://www.google.com.co/intl/es-419/about/products" target="_blank" class="header_menu"><img src="./img/al-icon.png" alt=""></a>
             <a href="https://accounts.google.com/ServiceLogin?hl=es-419&passive=true&continue=https://www.google.com.co/%3Fsa%3DX%26ved%3D0ahUKEwjv7rzevr_3AhXaEEQIHRkbDwsQOwgC&ec=GAZAmgQ" class="boton_acceder">Acceder</a>
         </nav>
     </header>
@@ -23,24 +23,25 @@
             </div>
             <input type="text" class="search">
             <nav class="botones_buscar">
-            <button>Buscar con Google</button>
-            <button>Voy a tener suerte</button>
+            <button class="boton_buscar" onclick="alert('ERROR 404: Los gays no pueden hacer búsquedas.');">Buscar con Google</button>
+            <button class="boton_buscar" onclick="window.location.href = 'https://doodles.google/'">Voy a tener suerte</button> 
+            <!-- Agregamos onclic de javascript para linkear el botón a un sitio, para no usar la etiqueta <a>  -->
             </nav>
-            <p>Ofrecido por Google en: <a href="https://www.google.com.co/setprefs?sig=0_mqPbGprjLO6jYYlr2LvQV86GdxU%3D&hl=es-419&source=homepage&sa=X&ved=0ahUKEwih9IL6_ZqFAxUbSzABHW8bATUQ2ZgBCB8">Español (Latinoamérica)</a></p>
+            <p class="idioma">Ofrecido por Google en:<a href="https://www.google.com.co/setprefs?sig=0_mqPbGprjLO6jYYlr2LvQV86GdxU%3D&hl=es-419&source=homepage&sa=X&ved=0ahUKEwih9IL6_ZqFAxUbSzABHW8bATUQ2ZgBCB8">Español (Latinoamérica)</a></p>
         </section>
     </main>
     <footer>
         <section class="pais">
             <p>Colombia</p>
         </section>
-        <nav>
-            <a href="https://about.google/?utm_source=google-CO&utm_medium=referral&utm_campaign=hp-footer&fg=1">Sobre Google</a>
-            <a href="https://www.google.com.co/intl/es_co/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Publicidad</a>
-            <a href="https://www.google.com.co/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1">Negocios</a>
-            <a href="https://google.com/search/howsearchworks/?fg=1">Cómo funciona la Búsqueda</a>
-            <a href="https://policies.google.com/privacy?hl=es-CO&fg=1">Privacidad</a>
-            <a href="https://policies.google.com/terms?hl=es-CO&fg=1">Condiciones</a>
-            <a href="#">Preferencias</a>
+        <nav class="footer_links_container">
+            <a href="https://about.google/?utm_source=google-CO&utm_medium=referral&utm_campaign=hp-footer&fg=1" class="footer_links">Sobre Google</a>
+            <a href="https://www.google.com.co/intl/es_co/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1" class="footer_links">Publicidad</a>
+            <a href="https://www.google.com.co/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1" class="footer_links">Negocios</a>
+            <a href="https://google.com/search/howsearchworks/?fg=1" class="footer_links">Cómo funciona la Búsqueda</a>
+            <a href="https://policies.google.com/privacy?hl=es-CO&fg=1" class="footer_links">Privacidad</a>
+            <a href="https://policies.google.com/terms?hl=es-CO&fg=1" class="footer_links">Condiciones</a>
+            <a href="#" class="footer_links">Preferencias</a>
         </nav>
     </footer>
 </body>

@@ -1,48 +1,60 @@
 * {
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
+    margin: 0;
 }
 
 header{
     display: flex;
     justify-content: right;
+    align-items: center;
     margin: 0 auto;
     padding: 20px;
 }
 
 header nav {
     display: flex;
+    align-items: center;
+    justify-content: right;
     gap: 25px;
 }
 
+.header_menu {
+    color: rgba(0, 0, 0, 0.87);
+    font-size: 13px;
+    font-weight: 400;
+
+}
 .boton_acceder {
     background-color: #4285F4;
     color: #ffff;
     font-weight: 600;
     padding: 10px 20px;
     border-radius: 5px;
+
 }
 
 main {
-    min-height: 70vh;
+    min-height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0 auto;
 }
 
 .logohome {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-bottom: 30px;
 }
 
 .search {
     display: block;
     width: 500px;
-    height: 25px;
-    margin: 20px;
+    height: 40px;
     border-radius: 10px;
-    border: solid gray 2px;
+    border: 1px solid #dfe1e5;
 }
 
 .botones_buscar {
@@ -50,3 +62,55 @@ main {
     justify-content: center;
     margin: 10px;
 }
+
+.boton_buscar {
+    margin: 10px;
+    width: 35%;
+    height: 36px;
+    color: rgb(60, 64, 67);
+    border-style: none;
+    font-weight: 300;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 90%;
+}
+
+.idioma {
+    display: flex;
+    justify-content: center;
+}
+
+footer {
+    margin: 0;
+    display: block;
+    background-color: rgb(242, 242, 242);
+    
+}
+
+.pais {
+    font-size: 14px;
+    color: rgb(31, 31, 31);
+    padding: 10px 15px;
+    margin: 0;
+    height: 20px;
+    align-items: center;
+    justify-content: center;
+    border: rgb(218, 220, 224) solid 2px;
+}
+
+.footer_links_container {
+    display: flex;
+    height: 50px;
+    background-color: rgb(242, 242, 242);
+    align-items: center;
+    justify-content: center;
+}
+
+.footer_links {
+    color: rgb(31, 31, 31);
+    padding: 15px;
+    font-size: 14px;
+    margin: 0;
+    
+}
+
